@@ -1,0 +1,40 @@
+$title-font:'Shrikhand', cursive;
+$text-font:'Roboto', sans-serif;
+$primary-color:#9356DC;
+$secondary-color:#FF79DA;
+$tertiary-color:#99E2D0;
+
+
+.footer {
+    background-color: #353535;
+    margin: 0;
+    padding: 0 0 25px 20px;
+}
+.footer-logo {
+    padding: 20px 0;
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 18px;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    
+    .footer-flex {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        p {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}
+.footer p, .footer-logo, .fa-handshake-angle, .fa-utensils {
+    color: white;
+}
+.footer-flex ~ p {
+    font-weight: 400;
+}
