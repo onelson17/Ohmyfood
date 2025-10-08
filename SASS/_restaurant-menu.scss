@@ -5,14 +5,7 @@ $secondary-color:#FF79DA;
 $tertiary-color:#99E2D0;
 $box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 // ========================== FOND ===========================
- .body-1 .background {
-    height: 275px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url("../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-}
+ 
 .body-1 .navbar {
  box-shadow: none;
  position: relative;
@@ -24,7 +17,7 @@ $box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 // ================================ MISE EN PAGE ENTÊTE ==========
 .menu1 {
-    margin: -75px 0 0 0;
+    margin: -40px 0 0 0;
     background-color: white;
     border-radius: 40px 40px 0 0;
     padding: 30px 15px;
