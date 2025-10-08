@@ -1,0 +1,88 @@
+$title-font:'Shrikhand', cursive;
+$text-font:'Roboto', sans-serif;
+$primary-color:#9356DC;
+$secondary-color:#FF79DA;
+$tertiary-color:#99E2D0;
+$box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+// ========================== FOND ===========================
+ .body-1 .background {
+    height: 275px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+.body-1 .navbar {
+ box-shadow: none;
+ position: relative;
+}
+.body-1 .fa-arrow-left {
+    position: absolute;
+    top: 35px;
+    left: 15px;
+}
+// ================================ MISE EN PAGE ENTÊTE ==========
+.menu1 {
+    margin: -75px 0 0 0;
+    background-color: white;
+    border-radius: 40px 40px 0 0;
+    padding: 30px 15px;
+    width: 100%;
+    .menu1--title {
+        font-size: 28px;
+        font-weight: 400;
+        font-family: $title-font;
+        }
+    .menu1--like-btn {
+        position: relative;
+        top: 15px;
+        left: 20px;
+    }
+}
+// ================================ CARTES DU MENU =================
+.body-1 .starter-title {
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 40px;
+    border-bottom: 3px solid $tertiary-color;
+    padding: 7px 0;
+}
+.body-1 .menu1 section {
+    margin: 30px 0;
+}
+.menu--container {
+    
+}
+.plat {
+    border-radius: 15px;
+    box-shadow: $box-shadow;
+    padding: 15px;
+    width: 100%;
+    height: 75px;
+    margin-bottom: 15px;
+    h3 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .ingredient {
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .price {
+        font-weight: 500;
+    }
+ }
+ .starter article:nth-child(2) {
+    margin-top: 15px;
+ }
+ .plat h3 + div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+    

@@ -1,10 +1,31 @@
+.header {
+  margin-top: 5px;
+  padding: 40px 20px;
+  background-color: #F6F6F6;
+}
+.header .header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.header .header-container h2 {
+  margin-bottom: 15px;
+}
+.header .header-container h3 {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
 .restaurant {
   background-color: #F6F6F6;
   padding: 50px 17px 70px 17px;
   margin: 0;
 }
 .restaurant h2 {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .restaurant_container {
@@ -30,7 +51,19 @@
   overflow: hidden;
   position: relative;
 }
-.card .card--new {
+.card .card__link {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.card .card__link img {
+  width: 100%;
+  object-fit: cover;
+  height: 70%;
+  border-radius: 15px 15px 0 0;
+}
+
+.card__link--new {
   padding: 10px;
   color: #008766;
   font-size: 14px;
@@ -44,34 +77,20 @@
   right: 20px;
   line-height: 10px;
 }
-.card img {
-  max-width: 100%;
-  object-fit: cover;
-  height: 70%;
-  border-radius: 15px 15px 0 0;
-}
 
 .card-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  border-radius: 0 0 15px 15px;
-}
-.card-bottom .card-bottom__name {
+  padding: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 5px;
-  padding: 15px 10px;
-  height: 80px;
 }
-.card-bottom .card-bottom__name h3 {
-  font-size: 18px;
+.card-bottom h3 {
   font-weight: 700;
 }
-.card-bottom .card-bottom__name p {
-  font-size: 17px;
+.card-bottom p {
   font-weight: 300;
+  font-size: 17px;
 }
 
 .fa-heart {
@@ -108,6 +127,98 @@
 .heart-full:checked ~ .full .full--full {
   opacity: 1;
   transition: 200ms ease;
+}
+
+.body-1 .background {
+  height: 275px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.body-1 .navbar {
+  box-shadow: none;
+  position: relative;
+}
+
+.body-1 .fa-arrow-left {
+  position: absolute;
+  top: 35px;
+  left: 15px;
+}
+
+.menu1 {
+  margin: -75px 0 0 0;
+  background-color: white;
+  border-radius: 40px 40px 0 0;
+  padding: 30px 15px;
+  width: 100%;
+}
+.menu1 .menu1--title {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: "Shrikhand", cursive;
+}
+.menu1 .menu1--like-btn {
+  position: relative;
+  top: 15px;
+  left: 20px;
+}
+
+.body-1 .starter-title {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 40px;
+  border-bottom: 3px solid #99E2D0;
+  padding: 7px 0;
+}
+
+.body-1 .menu1 section {
+  margin: 30px 0;
+}
+
+.plat {
+  border-radius: 15px;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  width: 100%;
+  height: 75px;
+  margin-bottom: 15px;
+}
+.plat h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.plat .ingredient {
+  font-size: 15px;
+  font-weight: 300;
+}
+.plat .price {
+  font-weight: 500;
+}
+
+.starter article:nth-child(2) {
+  margin-top: 15px;
+}
+
+.plat h3 + div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.background2 {
+  height: 275px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
 
 .footer {
@@ -147,36 +258,21 @@
   font-weight: 400;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #353535;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-}
-body .main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-body .main-container .navbar {
+.navbar {
   padding: 15px 0 0 0;
   margin-bottom: 4px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
   width: 100%;
   text-align: center;
 }
-body .main-container .navbar .logo {
+.navbar .logo {
   font-size: 30px;
   font-family: "Shrikhand", cursive;
   font-weight: 400;
   color: black;
 }
-body .main-container .location {
+
+.location {
   background-color: #EAEAEA;
   display: flex;
   width: 100%;
@@ -185,39 +281,15 @@ body .main-container .location {
   padding: 15px 0;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
-body .main-container .location p {
+.location p {
   font-size: 16px;
   font-weight: 500;
 }
 
-header {
-  margin-top: 5px;
-  padding: 40px 20px;
-  background-color: #F6F6F6;
-}
-header .header-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-header .header-container h2 {
-  margin-bottom: 15px;
-}
-header .header-container h3 {
-  font-size: 18px;
-  font-weight: 300;
-  margin-bottom: 30px;
-}
-
-main {
-  width: 100%;
-}
-main .operation {
+.operation {
   padding: 0 25px;
 }
-main .operation .operation--title {
+.operation .operation--title {
   margin-bottom: 40px;
 }
 
@@ -263,29 +335,6 @@ main .operation .operation--title {
   color: #9356DC;
 }
 
-h2 {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.restaurant-title {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-a {
-  text-decoration: none;
-}
-
-section {
-  margin: 50px 0;
-}
-
 .btn {
   color: white;
   height: 50px;
@@ -304,6 +353,49 @@ section {
 .btn:hover {
   box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.35);
   opacity: 0.8;
+}
+
+.menu-btn {
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #353535;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+body .main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .main-container main {
+  width: 100%;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  margin: 50px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
