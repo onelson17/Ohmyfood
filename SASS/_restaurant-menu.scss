@@ -46,9 +46,7 @@ $box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 .body-1 .menu1 section {
     margin: 30px 0;
 }
-.menu--container {
-    
-}
+
 .plat {
     border-radius: 15px;
     box-shadow: $box-shadow;
@@ -56,6 +54,12 @@ $box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     width: 100%;
     height: 75px;
     margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: end;
+    position: relative;
+    cursor: pointer;
     h3 {
         font-size: 18px;
         font-weight: 500;
@@ -67,15 +71,11 @@ $box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     }
     .price {
         font-weight: 500;
+        text-align: end;
     }
  }
  .starter article:nth-child(2) {
     margin-top: 15px;
  }
- .plat h3 + div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
- }
+ 
 
-    

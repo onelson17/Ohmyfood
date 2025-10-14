@@ -76,33 +76,3 @@ $tertiary-color:#99E2D0;
         font-size: 17px;
     }
 }
-
-.fa-heart {
-   margin-right: 25px;
-}
-.heart-full {
-   display: none;
-}
-.full i {
-    position: absolute;
-    bottom: 35px;
-    right: 0px;
-    cursor: pointer;
-    transition: 200ms ease;
-    padding: 0;
-    margin-right: 30px;
-}
-.full {
-    opacity: 1;
-   }
-.full--full{
-    opacity: 0;
-    color: #C968DB;
-}
-.heart-full:checked ~ .full .full--empty {
-    opacity: 0;
-  }
-  .heart-full:checked ~ .full .full--full {
-    opacity: 1;
-    transition: 200ms ease;
-  }

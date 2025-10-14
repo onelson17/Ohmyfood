@@ -1,0 +1,114 @@
+$title-font:'Shrikhand', cursive;
+$text-font:'Roboto', sans-serif;
+$primary-color:#9356DC;
+$secondary-color:#FF79DA;
+$tertiary-color:#99E2D0;
+
+
+// ========================== LIKE ============================
+.fa-heart {
+    margin-right: 25px;
+ }
+ .heart-full {
+    display: none;
+ }
+ .full i {
+     position: absolute;
+     bottom: 35px;
+     right: 0px;
+     cursor: pointer;
+     transition: 200ms ease;
+     padding: 0;
+     margin-right: 30px;
+ }
+ .full {
+     opacity: 1;
+    }
+ .full--full{
+     opacity: 0;
+     color: #C968DB;
+ }
+ .heart-full:checked ~ .full .full--empty {
+     opacity: 0;
+   }
+   .heart-full:checked ~ .full .full--full {
+     opacity: 1;
+     transition: 200ms ease;
+   }
+
+//    =========================== SLIDE MENU =====================
+.menu--container {
+    overflow: hidden;
+}
+.entrée, .plats, .dessert {
+    animation: slide-in 1s normal forwards ease-in-out 800ms;
+}
+.entrée {
+    animation-delay: 500ms;
+}
+.plats {
+    animation-delay: 1000ms;
+}
+.dessert {
+    animation-delay: 1500ms;
+}
+@keyframes slide-in {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.fa-circle-check {
+    color: white;
+}
+
+.plat h3, .ingredient {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+    min-width: 0;
+}
+.plat--content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    transition: all 300ms ease;
+}
+.plat:hover .plat--content {
+    width: 60%;
+}
+.slide {
+    width: 20%;
+    display: flex;
+    transform: translateX(0);
+    transition: transform 300ms ease, width 300ms ease;
+    justify-content: center;
+}
+.plat:hover .slide {
+    transform: translateX(-50px);
+   
+}
+.plat:hover .check {
+    transform: translateX(0);
+}
+
+.check {
+    background-color: $tertiary-color;
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    border-radius: 0 15px 15px 0;
+    text-align: center;
+    line-height: 75px;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    transition: all 300ms ease;
+    
+}
