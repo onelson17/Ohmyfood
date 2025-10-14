@@ -494,6 +494,18 @@
   .footer-flex + p {
     margin-left: 30px;
   }
+  .menu1 {
+    width: 80%;
+    margin: -50px auto;
+    padding: 50px 180px;
+    background-color: #F6F6F6;
+  }
+  .menu1 .menu--container {
+    padding: 0 15px;
+  }
+  .menu1 .menu--container .menu-btn {
+    margin-bottom: 50px;
+  }
 }
 * {
   margin: 0;

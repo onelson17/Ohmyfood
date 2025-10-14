@@ -5,6 +5,8 @@ $secondary-color:#FF79DA;
 $tertiary-color:#99E2D0;
 
 @media screen and (min-width: 1024px) {
+
+    // =============== INDEX HTML ==============
     .operation {
         padding: 0 180px;
     }
@@ -47,4 +49,20 @@ $tertiary-color:#99E2D0;
     .footer-flex + p {
         margin-left: 30px;
     }
+
+    // ================== RESTAURANT =================
+    .menu1 {
+        width: 80%;
+        margin: -50px auto;
+        padding: 50px 180px;
+        background-color: #F6F6F6;
+        .menu--container {
+            padding: 0 15px;
+            .menu-btn {
+                margin-bottom: 50px;
+            }
+        }
+        
+    }
+
 }
