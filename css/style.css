@@ -406,15 +406,13 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  flex: 1;
-  min-width: 0;
 }
 
 .plat--content {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  transition: all 300ms ease;
+  transition: all 400ms ease-in-out;
 }
 
 .plat:hover .plat--content {
@@ -425,7 +423,7 @@
   width: 20%;
   display: flex;
   transform: translateX(0);
-  transition: transform 300ms ease, width 300ms ease;
+  transition: transform 400ms ease-in-out;
   justify-content: center;
 }
 
@@ -434,7 +432,7 @@
 }
 
 .plat:hover .check {
-  transform: translateX(0);
+  transform: scaleX(1);
 }
 
 .check {
@@ -447,8 +445,9 @@
   line-height: 75px;
   right: 0;
   top: 0;
-  transform: translateX(100%);
-  transition: all 300ms ease;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 400ms ease-in-out;
 }
 
 @media screen and (min-width: 1024px) {
@@ -500,11 +499,18 @@
     padding: 50px 180px;
     background-color: #F6F6F6;
   }
+  .menu1 .menu1--like-btn {
+    left: auto;
+    right: 110px;
+  }
   .menu1 .menu--container {
     padding: 0 15px;
   }
   .menu1 .menu--container .menu-btn {
     margin-bottom: 50px;
+  }
+  .menu1 .menu1--title {
+    text-align: center;
   }
 }
 * {

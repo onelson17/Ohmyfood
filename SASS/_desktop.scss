@@ -56,13 +56,20 @@ $tertiary-color:#99E2D0;
         margin: -50px auto;
         padding: 50px 180px;
         background-color: #F6F6F6;
+        .menu1--like-btn {
+            left: auto;
+            right: 110px;
+        }
         .menu--container {
             padding: 0 15px;
             .menu-btn {
                 margin-bottom: 50px;
             }
         }
-        
+        .menu1--title {
+            text-align: center;
+        }
+       
     }
 
 }
