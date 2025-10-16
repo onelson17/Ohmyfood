@@ -41,16 +41,14 @@ $tertiary-color:#99E2D0;
     overflow: hidden;
 }
 .entrée, .plats, .dessert {
-    animation: slide-in 1s normal forwards ease-in-out 800ms;
+    animation: slide-in normal forwards ease-in-out 800ms;
 }
-.entrée {
+
+.plats {
     animation-delay: 500ms;
 }
-.plats {
-    animation-delay: 1000ms;
-}
 .dessert {
-    animation-delay: 1500ms;
+    animation-delay: 1000ms;
 }
 @keyframes slide-in {
 	0% {

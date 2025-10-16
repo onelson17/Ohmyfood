@@ -20,18 +20,21 @@ $box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     margin: -40px 0 0 0;
     background-color: white;
     border-radius: 40px 40px 0 0;
-    padding: 30px 15px;
     width: 100%;
     .menu1--title {
         font-size: 28px;
         font-weight: 400;
         font-family: $title-font;
+        padding: 30px 15px 0 15px;
         }
     .menu1--like-btn {
         position: relative;
         top: 15px;
-        left: 20px;
+        left: -15px;
     }
+}
+.menu--container {
+    padding: 0 15px;
 }
 // ================================ CARTES DU MENU =================
 .body-1 .starter-title {

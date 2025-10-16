@@ -109,18 +109,22 @@
   margin: -40px 0 0 0;
   background-color: white;
   border-radius: 40px 40px 0 0;
-  padding: 30px 15px;
   width: 100%;
 }
 .menu1 .menu1--title {
   font-size: 28px;
   font-weight: 400;
   font-family: "Shrikhand", cursive;
+  padding: 30px 15px 0 15px;
 }
 .menu1 .menu1--like-btn {
   position: relative;
   top: 15px;
-  left: 20px;
+  left: -15px;
+}
+
+.menu--container {
+  padding: 0 15px;
 }
 
 .body-1 .starter-title {
@@ -330,6 +334,7 @@
 .menu-btn {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .fa-heart {
@@ -373,19 +378,15 @@
 }
 
 .entrée, .plats, .dessert {
-  animation: slide-in 1s normal forwards ease-in-out 800ms;
-}
-
-.entrée {
-  animation-delay: 500ms;
+  animation: slide-in normal forwards ease-in-out 800ms;
 }
 
 .plats {
-  animation-delay: 1000ms;
+  animation-delay: 500ms;
 }
 
 .dessert {
-  animation-delay: 1500ms;
+  animation-delay: 1000ms;
 }
 
 @keyframes slide-in {
@@ -478,7 +479,7 @@
     padding: 50px 180px 70px 180px;
   }
   .footer {
-    padding: 30px 100px 10px 0;
+    padding: 30px 50px 10px 0;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -501,7 +502,7 @@
   }
   .menu1 .menu1--like-btn {
     left: auto;
-    right: 110px;
+    right: 20px;
   }
   .menu1 .menu--container {
     padding: 0 15px;
@@ -511,6 +512,26 @@
   }
   .menu1 .menu1--title {
     text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .operation {
+    padding: 0 75px;
+  }
+  .logo {
+    padding-bottom: 10px;
+  }
+  .header {
+    width: 100%;
+  }
+  .restaurant {
+    padding: 50px 75px;
+  }
+  .menu--container {
+    padding: 0 50px;
+  }
+  .menu1 .menu1--title {
+    padding: 30px 50px 0 50px;
   }
 }
 * {

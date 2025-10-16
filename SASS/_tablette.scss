@@ -1,0 +1,27 @@
+$title-font:'Shrikhand', cursive;
+$text-font:'Roboto', sans-serif;
+$primary-color:#9356DC;
+$secondary-color:#FF79DA;
+$tertiary-color:#99E2D0;
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .operation {
+        padding: 0 75px;
+    }
+    .logo {
+        padding-bottom: 10px;
+    }
+    .header {
+        width: 100%;
+    }
+    .restaurant {
+        padding: 50px 75px;
+    }
+    .menu--container {
+        padding: 0 50px;
+    }
+    .menu1 .menu1--title {
+        padding: 30px 50px 0 50px;
+    }
+}
