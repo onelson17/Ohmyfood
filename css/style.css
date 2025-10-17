@@ -453,6 +453,66 @@
   transform: translateX(75px);
 }
 
+#loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 999;
+  animation: loaderEnd 0.4s ease-in-out 2s forwards;
+}
+
+@keyframes loaderEnd {
+  0%, 80% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+#loader i {
+  font-size: 50px;
+  color: #9356DC;
+  animation: repeat-color 2s ease 500ms 1 forwards;
+}
+
+@keyframes repeat-color {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    color: #99E2D0;
+  }
+}
+.loader-anim {
+  opacity: 0;
+  animation: showContent 2.5s ease-in forwards;
+}
+
+@keyframes loaderEnd {
+  0%, 80% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes showContent {
+  0%, 80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media screen and (min-width: 1024px) {
   .operation {
     padding: 0 120px;
