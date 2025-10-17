@@ -76,37 +76,37 @@ $tertiary-color:#99E2D0;
     display: flex;
     flex-direction: column;
     transition: all 400ms ease-in-out;
+    overflow: hidden;
 }
 .plat:hover .plat--content {
     width: 60%;
 }
 .slide {
-    width: 20%;
     display: flex;
-    transform: translateX(0);
-    transition: transform 400ms ease-in-out;
+    transition: all 500ms ease-in-out;
     justify-content: center;
 }
 .plat:hover .slide {
-    transform: translateX(-50px);
+    margin-right: 75px;
    
 }
 .plat:hover .check {
-    transform: scaleX(1);
+    transform: translateX(0);
 
 }
 
 .check {
     background-color: $tertiary-color;
     position: absolute;
+    top: 0;
+    right: 0;
     height: 75px;
     width: 75px;
     border-radius: 0 15px 15px 0;
-    text-align: center;
-    line-height: 75px;
-    right: 0;
-    top: 0;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform 400ms ease-in-out;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms ease-in-out;
+    transform: translateX(75px);
 }

@@ -8,7 +8,7 @@ $tertiary-color:#99E2D0;
 
     // =============== INDEX HTML ==============
     .operation {
-        padding: 0 180px;
+        padding: 0 120px;
     }
     .navbar {
         padding: 15px 0;
@@ -26,12 +26,14 @@ $tertiary-color:#99E2D0;
     .restaurant_container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        column-gap: 100px;
+        row-gap: 50px;
     }
     .operation__card i {
         margin-left: 20px;
     }
     .restaurant {
-        padding: 50px 180px 70px 180px;
+        padding: 50px 120px 70px 120px;
     }
     .footer {
         padding: 30px 50px 10px 0;
@@ -56,20 +58,24 @@ $tertiary-color:#99E2D0;
         margin: -50px auto;
         padding: 50px 180px;
         background-color: #F6F6F6;
-        .menu1--like-btn {
-            left: auto;
-            right: 20px;
+        
         }
-        .menu--container {
-            padding: 0 15px;
-            .menu-btn {
-                margin-bottom: 50px;
+    .menu--container {
+        padding: 0 15px;
+        .menu-btn {
+            margin-bottom: 50px;
             }
         }
-        .menu1--title {
-            text-align: center;
+    .menu1--title {
+        text-align: center;
         }
        
-    }
+        .desktop-title {
+            display: flex;
+            justify-content: center;
+        }
+        .menu1--like-btn {
+            margin-left: 75px;
+        }
 
 }

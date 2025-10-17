@@ -60,9 +60,11 @@ $box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     display: flex;
     justify-content: space-between;
     gap: 15px;
-    align-items: end;
+    align-items: flex-end;
     position: relative;
+    overflow: hidden;
     cursor: pointer;
+    animation: slide-menu 1000ms ease both;
     h3 {
         font-size: 18px;
         font-weight: 500;
@@ -75,6 +77,7 @@ $box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     .price {
         font-weight: 500;
         text-align: end;
+        
     }
  }
  .starter article:nth-child(2) {

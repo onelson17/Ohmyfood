@@ -151,9 +151,11 @@
   display: flex;
   justify-content: space-between;
   gap: 15px;
-  align-items: end;
+  align-items: flex-end;
   position: relative;
+  overflow: hidden;
   cursor: pointer;
+  animation: slide-menu 1000ms ease both;
 }
 .plat h3 {
   font-size: 18px;
@@ -414,6 +416,7 @@
   display: flex;
   flex-direction: column;
   transition: all 400ms ease-in-out;
+  overflow: hidden;
 }
 
 .plat:hover .plat--content {
@@ -421,39 +424,38 @@
 }
 
 .slide {
-  width: 20%;
   display: flex;
-  transform: translateX(0);
-  transition: transform 400ms ease-in-out;
+  transition: all 500ms ease-in-out;
   justify-content: center;
 }
 
 .plat:hover .slide {
-  transform: translateX(-50px);
+  margin-right: 75px;
 }
 
 .plat:hover .check {
-  transform: scaleX(1);
+  transform: translateX(0);
 }
 
 .check {
   background-color: #99E2D0;
   position: absolute;
+  top: 0;
+  right: 0;
   height: 75px;
   width: 75px;
   border-radius: 0 15px 15px 0;
-  text-align: center;
-  line-height: 75px;
-  right: 0;
-  top: 0;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform 400ms ease-in-out;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 500ms ease-in-out;
+  transform: translateX(75px);
 }
 
 @media screen and (min-width: 1024px) {
   .operation {
-    padding: 0 180px;
+    padding: 0 120px;
   }
   .navbar {
     padding: 15px 0;
@@ -471,12 +473,14 @@
   .restaurant_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+    row-gap: 50px;
   }
   .operation__card i {
     margin-left: 20px;
   }
   .restaurant {
-    padding: 50px 180px 70px 180px;
+    padding: 50px 120px 70px 120px;
   }
   .footer {
     padding: 30px 50px 10px 0;
@@ -500,23 +504,26 @@
     padding: 50px 180px;
     background-color: #F6F6F6;
   }
-  .menu1 .menu1--like-btn {
-    left: auto;
-    right: 20px;
-  }
-  .menu1 .menu--container {
+  .menu--container {
     padding: 0 15px;
   }
-  .menu1 .menu--container .menu-btn {
+  .menu--container .menu-btn {
     margin-bottom: 50px;
   }
-  .menu1 .menu1--title {
+  .menu1--title {
     text-align: center;
+  }
+  .desktop-title {
+    display: flex;
+    justify-content: center;
+  }
+  .menu1--like-btn {
+    margin-left: 75px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .operation {
-    padding: 0 75px;
+    padding: 0 100px;
   }
   .logo {
     padding-bottom: 10px;
@@ -525,7 +532,7 @@
     width: 100%;
   }
   .restaurant {
-    padding: 50px 75px;
+    padding: 50px 100px;
   }
   .menu--container {
     padding: 0 50px;
