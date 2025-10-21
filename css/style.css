@@ -462,7 +462,7 @@
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.8);
   z-index: 999;
-  animation: loaderEnd 0.4s ease-in-out 2s forwards;
+  animation: loaderEnd 0.3s ease-in-out 2s forwards;
 }
 
 @keyframes loaderEnd {
@@ -478,7 +478,7 @@
 #loader i {
   font-size: 50px;
   color: #9356DC;
-  animation: repeat-color 2s ease 500ms 1 forwards;
+  animation: repeat-color 1.5s ease 500ms 1 forwards;
 }
 
 @keyframes repeat-color {
