@@ -473,6 +473,7 @@
   100% {
     opacity: 0;
     visibility: hidden;
+    z-index: 0;
   }
 }
 #loader i {
@@ -495,16 +496,6 @@
   animation: showContent 2.5s ease-in forwards;
 }
 
-@keyframes loaderEnd {
-  0%, 80% {
-    opacity: 1;
-    visibility: visible;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
 @keyframes showContent {
   0%, 80% {
     opacity: 0;

@@ -123,8 +123,15 @@ $tertiary-color:#99E2D0;
     animation: loaderEnd 0.3s ease-in-out 2s forwards;
 }
 @keyframes loaderEnd {
-    0%, 80% { opacity: 1; visibility: visible; }
-    100% { opacity: 0; visibility: hidden; }
+    0%, 80% { 
+        opacity: 1;
+        visibility: visible;
+    }
+    100% { 
+        opacity: 0;
+        visibility: hidden;
+        z-index: 0;
+    }
   }
 
 #loader i {
@@ -146,10 +153,7 @@ $tertiary-color:#99E2D0;
     opacity: 0;
     animation: showContent 2.5s ease-in forwards;
 }
-@keyframes loaderEnd {
-    0%, 80% { opacity: 1; visibility: visible; }
-    100% { opacity: 0; visibility: hidden; }
-  }
+
 @keyframes showContent {
     0%, 80% { opacity: 0; }
     100% { opacity: 1; }
